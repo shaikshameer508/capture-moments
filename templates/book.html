@@ -21,6 +21,7 @@
       background-color: #ffffff;
       padding: 40px 30px;
       border-radius: 15px;
+      background: transparent;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       width: 100%;
       max-width: 400px;
@@ -67,7 +68,7 @@
     }
     a:hover {
             background-color: #ffcc70;
-            background-position: down;
+            shape-margin:back-btn;
             color: black;
         }
 
@@ -83,6 +84,8 @@
     <button type="submit">Book Now</button>
     
   </form>
-<a href="{{ url_for('show_photographers') }}" class="button"> Back to show_photographers</a>
+ 
+ <br>        <br>   <a href="{{ url_for('show_photographers') }}" class="back-btn"> Back to show_photographers</a>  </br>     </br>
+
 </body>
 </html>
