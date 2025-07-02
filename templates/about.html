@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - SnapBook</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('/static/images/camera-bg.jpg')  no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.75);
+            min-height: 100vh;
+            padding: 60px 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #ffcc70;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 25px;
+            border: 2px solid #ffcc70;
+            border-radius: 8px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ffcc70;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <h1>About Us</h1>
+        <p><strong>📸 Capture Moments</strong>, Create Memories ✨
+In a world that races forward, it’s the little moments we freeze in time that remind us what truly matters. A spontaneous laugh with friends, the golden hue of sunset on your rooftop, the proud glint in your eyes after completing something you once feared—you don't just take a photo; you tell a story.
+Every snapshot is a silent witness to emotions too big for words and too precious to forget. They don't need to be picture-perfect—they need to be real. Because years from now, it won’t be the filter or the frame you remember, but the feeling it stirred within you.
+So click the shutter, save the smiles, and let each image be a gentle echo of a memory well-lived. ❤
+
+If you'd like, I can help tailor this for a social media post, portfolio introduction, or even a photography website. Just say the word!
+</p>
+
+        <a href="{{ url_for('home') }}">← Back to Home</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meDta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #ffcc70;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.7;
+        }
+
+        .info {
+            margin: 30px 0;
+        }
+
+        .info strong {
+            color: #ffcc70;
+        }
+
+        a.back {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            color: white;
+            border: 2px solid #ffcc70;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        a.back:hover {
+            background-color: #ffcc70;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="info"><strong>📞 Phone:</strong> +91-9492240421</p>
+        <p class="info"><strong>📧 Email:</strong> shaikshameer508@gmail.com</p>
+        <p class="info"><strong>📍 Address:</strong> Maruthi Nagar 1st Lane-522001,Guntur,Andhra Pradesh,India</p>
+        <p>Any enquiry? Please don’t hesitate to reach out. We’re here to help you capture life’s best moments with the perfect photographer!</p>
+
+        <a class="back" href="{{ url_for('home') }}">← Back to Home</a>
+    </div>
+</body>
+</html>

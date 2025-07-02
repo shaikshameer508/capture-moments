@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Capture Moments</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: url('/static/images/camera1.jpg')  no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 100px;
+            
+        }
+
+        h1 {
+            font-size: 3em;
+            font-family:"italic" sans-serif;
+        }
+
+        p {
+            font-size:1.56em;
+            color:goldenrod;
+        }
+         
+        a.button {
+            background: rgb(241, 238, 238);
+            color: black;
+            padding: 15px 30px;
+            margin: 20px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        a.button:hover {
+            background-color: rgb(186, 121, 147);
+            color: black;
+        }
+    </style>
+</head>
+ <body>
+     <h1>Capture Moments</h1>
+
+     <p style="margin-bottom: 50px;">Your go-to platform for booking photographers!</p>
+     
+     <p style="margin-bottom: 50px;">Because every moment deserves to be framed forever</p>
+
+     <a href="/show-photographers" class="button">View Photographers</a>
+     <a href="{{ url_for('about') }}" class="button">About Us</a>
+     <a href="{{ url_for('contact') }}"class="button">Contact Us</a>
+
+     <a href="{{ url_for('logout') }}" style="color:red; font-weight: bold;" class="button">Logout</a>
+    
+
+
+</body>
+</html>
